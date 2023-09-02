@@ -20,8 +20,8 @@ declare enum JuniorDomain {
   }
 
   interface Company {
-    interns: Intern[]; // Use camelCase here
-    juniors: Junior[]; // Use camelCase here
+    interns: Intern[];
+    juniors: Junior[];
     Country: string;
   }
   
@@ -64,8 +64,8 @@ declare enum JuniorDomain {
 //   ];
   
 //   const company: Company = {
-//     interns: interns, // Use camelCase here
-//     juniors: juniors, // Use camelCase here
+//     interns: interns,
+//     juniors: juniors,
 //     Country: 'United States',
 //   };
   
