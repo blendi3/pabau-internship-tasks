@@ -7,9 +7,9 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Body({ options, setStep }) {
+function Body(props) {
   const handleOptionClick = () => {
-    setStep(2); 
+    props.setStep(2); 
   };
 
   
@@ -17,7 +17,7 @@ function Body({ options, setStep }) {
   return (
     <div className='px-10 pt-5 lg:px-60 lg:pt-10'>
     <div className="body flex flex-col mt-4 border border-black p-4 bg-gray-200">
-      {options.map(option => (
+      {props.options.map(option => (
         <Link
           key={option.id}
           to={`/${option.id}`}

@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function OptionPage({ optionName, setStep }) {
+function OptionPage(props) {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
-    setStep(1);
+    props.setStep(1);
     navigate(-1);
   };
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="content">
-        <h2>{optionName}</h2>
+        <h2>{props.optionName}</h2>
       </div>
 
 
